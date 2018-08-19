@@ -8,29 +8,40 @@
     <style>
         body {
             width: 95%;
-            /* height: 100%; */
             margin: 30px auto;
             font-family: 'Ubuntu', sans-serif;
             line-height: 20px;
-            /* background: rgb(181, 243, 237); */
-            background: url(bg-top.svg), url(bg-end.svg);
             background-repeat: no-repeat;
-            background-position: left top, right bottom;
-            /* background-color: rgb(255, 255, 255); */
-            /* text-align: justify; */
+            background-size: cover;
             font-weight: bolder;
+        }
+
+        body::after {
+            content: "";
+            height: 1500px;
+            background: url(bg6.png);
+            opacity: 0.12;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            position: absolute;
+            z-index: -1;
+            background-repeat: no-repeat;
+            background-size: 100%;
         }
 
         header {
             height: 200px;
-            margin-bottom: 5px;
+            margin-bottom: 15px;
         }
 
         nav {
             height: 50px;
-            background-color: #f1f1f1;
+            background-color: #2DBCAD;
             margin: auto;
             text-align: center;
+            color: #fff;
         }
 
         section {
@@ -44,7 +55,7 @@
 
         #left-section {
             float: left;
-            width: 38%;
+            width: 36%;
         }
 
         #right-section {
@@ -78,7 +89,6 @@
         .fas {
             vertical-align: sub;
             padding: 12px;
-            color: #2DBCAD;
         }
 
         .fa-2x {
@@ -175,7 +185,7 @@
         .company-name {
             font-size: 22px;
             color: #2DBCAD;
-            margin: 0 0 25px 0;
+            margin: 0 0 5px 0;
             text-decoration: underline;
             text-underline-position: under;
         }
@@ -193,6 +203,15 @@
             font-size: 20px;
             color: #2DBCAD;
             margin-bottom: 5px;
+            text-decoration: underline;
+            text-underline-position: under;
+        }
+
+        hr {
+            border: none;
+            height: 3px;
+            color: #2DBCAD;
+            background-color: #2DBCAD;
         }
     </style>
 </head>
@@ -219,6 +238,7 @@
             <section id="left-section">
                 <article>
                     <h3 class="heading">KEY SKILLS</h3>
+                    <hr>
                     <div class="key-skills-set">
                         <div class="key-skills">MEAN Stack</div>
                         <div class="key-skills">AngularJs</div>
@@ -233,6 +253,7 @@
                 </article>
                 <article>
                     <h3 class="heading">HIGHLIGHTS</h3>
+                    <hr>
                     <ul class="highlights-list">
                         <li>
                             <p>
@@ -271,6 +292,7 @@
                 </article>
                 <article>
                     <h3 class="heading">TECHNOLOGY STACK</h3>
+                    <hr>
                     <div>
                         <ul class="no-list-style">
                             <li>
@@ -305,6 +327,7 @@
 
                 <article>
                     <h3 class="heading">EDUCATION</h3>
+                    <hr>
                     <div class="education">
                         <div>
                             <span class="text-color-black">Bachelor of Engineering in Computer Science (2014) – </span>
@@ -324,10 +347,12 @@
             <section id="right-section">
                 <article>
                     <h3 class="heading">WORK EXPERIENCE</h3>
+                    <hr>
+                    <br>
                     <article>
                         <div>
                             <h5 class="company-name">Zensar Technologies Pvt. Ltd. (06/2017 – Present)</h5>
-
+                            <br>
                             <div class="project-details">
                                 <h5 class="project-name">Redmine Statistics</h5>
                                 <p class="project-description">The internal quality analysis tool for representing the defect reports in different chart
@@ -358,7 +383,7 @@
                             </div>
                             <br>
                             <h5 class="company-name">Cuelogic Technologies Pvt. Ltd. (04/2015 – 05/2017)</h5>
-
+                            <br>
                             <div class="project-details">
                                 <h5 class="project-name">Kantar Media</h5>
                                 <p class="project-description">Kantar Media is data and service provider for all sort of media measurements, monitoring,
