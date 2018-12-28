@@ -10,3 +10,9 @@ ng add @angular/material // V >= 6
 
 npm i -g firebase-tools
 firebase login
+
+Bootstrap
+
+https://getbootstrap.com/docs/4.1/content/typography/
+
+https://ng-bootstrap.github.io/#/components/buttons/examples
