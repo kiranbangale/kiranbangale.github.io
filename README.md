@@ -8,8 +8,13 @@ ngh --message="Build release" --branch="master"
 
 ## Good read:
 
-https://appdividend.com/category/angular/ > Angular, Node, Js
-https://bennettfeely.com/clippy/ > Css clip-path maker
-https://www.youtube.com/watch?v=blQ60skPzl0&index=2&list=PL55RiY5tL51q4D-B63KBnygU6opNPFk_q > NodeJs
+> Angular, Node, Js
+> https://appdividend.com/category/angular/
+
+> Css clip-path maker
+> https://bennettfeely.com/clippy/
+
+> NodeJs
+> https://www.youtube.com/watch?v=blQ60skPzl0&index=2&list=PL55RiY5tL51q4D-B63KBnygU6opNPFk_q
 
 [Style guide](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
