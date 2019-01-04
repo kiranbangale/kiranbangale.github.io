@@ -5,7 +5,7 @@ Angular:
 
 npm install -g angular-cli-ghpages
 ng build --prod --base-href "https://kiranbangale.github.io/"
-ngh --message="Build release" --branch="portfolio"
+ngh --on-slient --message="Build release" --branch="master"
 ```
 
 ```
