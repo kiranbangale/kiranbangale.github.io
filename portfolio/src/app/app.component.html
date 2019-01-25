@@ -3,6 +3,20 @@
   style="box-shadow: 0 2.5rem 3rem rgba(17,20,25,17.15)!important;"
 >
   <app-header></app-header>
-  <app-base></app-base>
+  <!--
+    <ul>
+      <li *ngFor="let book of (dataObj | async)">
+        <pre>{{ book | json }}</pre>
+      </li>
+    </ul>
+  -->
+  <router-outlet></router-outlet>
+
+  <!--
+    <app-header></app-header>
+    <app-base></app-base>
+    <app-footer></app-footer>
+  -->
+
   <app-footer></app-footer>
 </div>

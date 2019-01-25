@@ -1,0 +1,70 @@
+{
+  "data": {
+    "myInfo": {
+      "name": "Kiran Bangale",
+      "contact": "+91 955-224-0746",
+      "email": "kiranbangale@outlook.com",
+      "description": "Hey, I'm Kiran Bangale and this is my profile show casing the work i've done till now and the technologies i'm looking forward to learn. Please go through my profile and do give me your valuable feedback. You can also request my CV for the job offer or freelancing projects.",
+      "cv": "",
+      "profilePicture": "",
+      "knownTechnologies": {
+        "js": {
+          "rating": 8,
+          "versions": ["ES5", "ES6"]
+        },
+        "angular": {
+          "rating": 8,
+          "versions": [1, 2, 6]
+        },
+        "html": {
+          "rating": 8,
+          "versions": [4, 5]
+        },
+        "css": {
+          "rating": 7,
+          "versions": [3]
+        },
+        "bootstrap": {
+          "rating": 8,
+          "versions": [3, 4]
+        },
+        "sass": {
+          "rating": 8,
+          "versions": []
+        },
+        "nodeJs": {
+          "rating": 5,
+          "versions": [6]
+        },
+        "expressJs": {
+          "rating": 5,
+          "versions": [4]
+        }
+      },
+      "intrestedTechnologies": ["mongodb", "firebase", "serverless", "graphQl"]
+    },
+    "projects": [
+      {
+        "name": "angular6",
+        "ghPagesLink": "angular6",
+        "description": "Recipe book app.",
+        "image": "https://github.com/kiranbangale/angular6/blob/master/img.jpg"
+      }
+    ],
+    "posts": [
+      {
+        "name": "",
+        "tag": "",
+        "content": "",
+        "image": ""
+      }
+    ],
+    "feedbacks": [
+      {
+        "name": "",
+        "image": "",
+        "content": ""
+      }
+    ]
+  }
+}

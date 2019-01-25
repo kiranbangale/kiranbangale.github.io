@@ -22,6 +22,9 @@ firebase deploy
 > Angular, Node, Js:
 
     1. https://appdividend.com/category/angular/
+    2. https://www.youtube.com/watch?v=9wxEwE8UFr0,
+       https://medium.com/factory-mind/angular-firebase-typescript-step-by-step-tutorial-2ef887fc7d71,
+       https://www.youtube.com/watch?v=6N_1vUPlhvk // CURD operations in angular with firebase
 
 > Css clip-path maker:
 
