@@ -52,7 +52,7 @@ export class FeedbacksComponent implements OnInit {
       provider.addScope('email');
       this.afAuth.auth
         .signInWithPopup(provider)
-        .then(res => {
+        .then((res: any) => {
           resolve(res);
           const feedbackObj = this.feedbackForm.value;
           feedbackObj.profilePictureUrl =
