@@ -1,0 +1,18 @@
+.feedbackImg img {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background-position: 0 54%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.dark-modal .modal-content {
+  background-color: #292b2c;
+  color: white;
+}
+.dark-modal .close {
+  color: white;
+}
+.light-blue-backdrop {
+  background-color: #5cb3fd;
+}

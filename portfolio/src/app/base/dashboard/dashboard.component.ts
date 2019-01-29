@@ -7,7 +7,7 @@ import { DataService } from '../../shared/data.service';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent implements OnInit {
-  myInfo: any[];
+  myInfo: any;
 
   constructor(private dataService: DataService) {}
 

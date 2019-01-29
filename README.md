@@ -6,6 +6,11 @@ Angular:
 npm install -g angular-cli-ghpages
 ng build --prod --base-href "https://kiranbangale.github.io/"
 ngh --on-slient --message="Build release" --branch="master"
+
+npm i angular-cli-ghpages --save-dev
+ng build --prod --base-href "https://kiranbangale.github.io/"
+npx angular-cli-ghpages --branch=master
+
 ```
 
 ```

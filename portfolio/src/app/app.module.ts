@@ -1,8 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { AngularFireAuthModule } from 'angularfire2/auth';
 
 import { RouterModule, Routes } from '@angular/router';
 
@@ -19,6 +22,7 @@ import { FooterComponent } from './footer/footer.component';
 
 import { DataService } from './shared/data.service';
 import { environment } from '../environments/environment';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 const appRoutes: Routes = [
   {
@@ -55,8 +59,12 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
+    FormsModule,
+    ReactiveFormsModule,
+    NgbModule.forRoot(),
     RouterModule.forRoot(appRoutes),
-    AngularFireModule.initializeApp(environment.firebaseConfig, 'portfolio'),
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireAuthModule,
     AngularFireDatabaseModule
   ],
   providers: [DataService],

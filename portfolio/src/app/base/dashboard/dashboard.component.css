@@ -1,5 +1,8 @@
-.profilePicture img {
+.profilePicture {
+  background: url('../../../assets/profilePicture.jpg');
   width: 250px;
-  height: 280px;
-  border-radius: 0%;
+  height: 250px;
+  background-position: 0 54%;
+  background-size: 100%;
+  background-repeat: no-repeat;
 }

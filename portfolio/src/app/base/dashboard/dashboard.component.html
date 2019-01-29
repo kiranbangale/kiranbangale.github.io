@@ -1,11 +1,34 @@
 <h4>It's Me...</h4>
 
-<div class="profilePicture">
-	<img src={{myInfo.profilePicture}} alt="" />
+<div class="profilePicture"></div>
+<br />
+<div class="row">{{ myInfo?.email }}</div>
+<br />
+<div class="row">{{ myInfo?.description }}</div>
+<br />
+
+<div class="row">
+  <ul>
+    <li *ngFor="let knownTechnologie of (myInfo?.knownTechnologies | keyvalue)">
+      {{ knownTechnologie.key }} <br />
+      rating: {{ knownTechnologie.value.rating }} versions:
+      {{ knownTechnologie.value.versions }}
+      <hr />
+    </li>
+  </ul>
 </div>
-{{ myInfo.contact }}
-{{ myInfo.email }}
+<br />
 
+<div class="row">
+  <ul>
+    <li *ngFor="let technologie of myInfo?.intrestedTechnologies">
+      {{ technologie }}
+      <hr />
+    </li>
+  </ul>
+</div>
+<br />
 
-{{ myInfo.description }} 
+<div class="row"><button>Request CV</button></div>
+<br />
 <app-projects></app-projects>
