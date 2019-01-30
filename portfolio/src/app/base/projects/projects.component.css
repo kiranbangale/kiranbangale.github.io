@@ -1,0 +1,13 @@
+.projectImg img {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background-position: 0 54%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+a.disabled {
+  color: gray;
+  cursor: not-allowed;
+  text-decoration: underline;
+}

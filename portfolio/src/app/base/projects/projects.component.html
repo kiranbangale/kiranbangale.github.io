@@ -1,7 +1,82 @@
 <div class="jumbotron jumbotron-fluid shadow">
   <div class="container">
-    <h1 class="display-4">Projects</h1>
-    <hr class="my-4" />
-    <p class="lead">Gonna be projects!</p>
+    <ul>
+      <li *ngFor="let publishedProject of (myProjects?.published | keyvalue)">
+        <div class="row">
+          <div class="col-md-2">
+            <label for="">{{ publishedProject.value.name }}</label>
+            <div class="projectImg">
+              <img
+                [src]="
+                  publishedProject.value.image
+                    ? publishedProject.value.image
+                    : defaultProjectImg
+                "
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="col-md-10">
+            description: {{ publishedProject.value.description }} <br />
+            <a
+              class=""
+              [href]="publishedProject.value.githubLink"
+              target="_blank"
+            >
+              Github Link <i class="fab fa-github fa-2x"></i>
+            </a>
+            <br />
+            <br />
+            <a
+              [class.disabled]="
+                !publishedProject.value.ghPagesPublished ? true : null
+              "
+              [href]="publishedProject.value.ghPagesLink"
+              target="_blank"
+            >
+              Published on gh-pages
+            </a>
+          </div>
+        </div>
+        <hr />
+      </li>
+    </ul>
+    <hr />
+
+    <h4>Up Coming Projects</h4>
+    <ul>
+      <li *ngFor="let upComingProject of (myProjects?.upComing | keyvalue)">
+        <div class="row">
+          <div class="col-md-2">
+            <label for="">{{ upComingProject.value.name }}</label>
+            <div class="projectImg">
+              <img [src]="underDevelopmentImg" alt="" />
+            </div>
+          </div>
+          <div class="col-md-10">
+            description: {{ upComingProject.value.description }} <br />
+            <a
+              class=""
+              [href]="upComingProject.value.githubLink"
+              target="_blank"
+            >
+              Github Link <i class="fab fa-github fa-2x"></i>
+            </a>
+            <br />
+            <br />
+            <a
+              [class.disabled]="
+                !upComingProject.value.ghPagesPublished ? true : null
+              "
+              [href]="upComingProject.value.ghPagesLink"
+              target="_blank"
+            >
+              Published on gh-pages
+            </a>
+          </div>
+        </div>
+        <hr />
+      </li>
+    </ul>
   </div>
 </div>

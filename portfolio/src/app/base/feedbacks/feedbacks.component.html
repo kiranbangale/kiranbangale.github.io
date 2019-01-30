@@ -31,7 +31,12 @@
       </ul>
     </div>
   </div>
-
+  <button
+    class="btn btn-outline-primary mb-2 mr-2"
+    (click)="openVerticallyCentered(content)"
+  >
+    Give Me Feedback
+  </button>
   <ng-template #content let-d="dismiss">
     <form [formGroup]="feedbackForm" (ngSubmit)="onSubmit(); d('Close click')">
       <div class="modal-header">
@@ -134,11 +139,4 @@
       </div>
     </form>
   </ng-template>
-
-  <button
-    class="btn btn-outline-primary mb-2 mr-2"
-    (click)="openVerticallyCentered(content)"
-  >
-    Give Me Feedback
-  </button>
 </div>
