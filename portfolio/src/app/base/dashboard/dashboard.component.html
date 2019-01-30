@@ -29,6 +29,91 @@
 </div>
 <br />
 
-<div class="row"><button>Request CV</button></div>
+<ng-template #content let-d="dismiss">
+  <form [formGroup]="requestCvForm" (ngSubmit)="onSubmit(); d('Close click')">
+    <div class="modal-header">
+      <h4 class="modal-title" id="modal-basic-title">Recommend Me :)</h4>
+
+      <button
+        type="button"
+        class="close"
+        aria-label="Close"
+        (click)="d('Cross click')"
+      >
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                class="form-control"
+                formControlName="name"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="text"
+                id="email"
+                class="form-control"
+                formControlName="email"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="form-group">
+              <label for="description">Reason</label>
+              <textarea
+                type="text"
+                id="description"
+                class="form-control"
+                formControlName="description"
+                rows="6"
+              ></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button
+        type="submit"
+        class="btn btn-light"
+        [disabled]="!requestCvForm.valid"
+      >
+        Submit
+      </button>
+    </div>
+  </form>
+</ng-template>
+
 <br />
+
+<ngb-alert
+  class="alert-msg"
+  *ngIf="alertMsg.message"
+  [type]="alertMsg.type"
+  (close)="alertMsg.message = null"
+  >{{ alertMsg.message }}</ngb-alert
+>
+
+<button
+  class="btn btn-outline-primary mb-2 mr-2"
+  (click)="openVerticallyCentered(content)"
+>
+  Request CV
+</button>
+
 <app-projects></app-projects>
