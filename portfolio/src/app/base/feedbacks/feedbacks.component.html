@@ -9,7 +9,14 @@
             <div class="col-md-2">
               <label for="">{{ feedback.value.name }}</label>
               <div class="feedbackImg">
-                <img [src]="feedback.value.profilePictureUrl" alt="" />
+                <img
+                  [src]="
+                    feedback.value.profilePictureUrl
+                      ? feedback.value.profilePictureUrl
+                      : defaultProfilePic
+                  "
+                  alt=""
+                />
               </div>
             </div>
             <div class="col-md-10">
@@ -25,23 +32,12 @@
     </div>
   </div>
 
-  <!-- (click)="d('Close click')" -->
   <ng-template #content let-d="dismiss">
     <form [formGroup]="feedbackForm" (ngSubmit)="onSubmit(); d('Close click')">
       <div class="modal-header">
         <h4 class="modal-title" id="modal-basic-title">
           Your valuable feedback please :)
         </h4>
-        <p>Give me thumbsup</p>
-
-        <input
-          type="checkbox"
-          data-md-icheck
-          (change)="thumbsUp = !thumbsUp"
-          formControlName="thumbsUp"
-        />
-        Checkbox is <span *ngIf="thumbsUp">checked</span
-        ><span *ngIf="!thumbsUp">unchecked</span>
 
         <button
           type="button"
@@ -53,6 +49,26 @@
         </button>
       </div>
       <div class="modal-body">
+        <div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group">
+                <label for="thumbsup" class="fancy-checkbox">
+                  Like my profile?
+                  <input
+                    type="checkbox"
+                    data-md-icheck
+                    (change)="thumbsUp = !thumbsUp"
+                    formControlName="thumbsUp"
+                    id="thumbsup"
+                  />
+                  <i class="fa-thumbs-up far unchecked"></i>
+                  <i class="fa-thumbs-up fas checked"></i>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
         <div>
           <div class="row">
             <div class="col-md-12">
@@ -94,6 +110,17 @@
               </div>
             </div>
           </div>
+          <input
+            type="checkbox"
+            data-md-icheck
+            (change)="useGoogleProfile = !useGoogleProfile"
+            formControlName="useGoogleProfile"
+          />
+          Let me use your google profile pic. <br />
+          <!--
+            Checkbox is <span *ngIf="useGoogleProfile">checked</span
+            ><span *ngIf="!useGoogleProfile">unchecked</span>
+          -->
         </div>
       </div>
       <div class="modal-footer">

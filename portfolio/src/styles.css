@@ -9,3 +9,6 @@ body {
   /* background-repeat: no-repeat;
   background-size: 109% 100%; */
 }
+ul {
+  list-style: none;
+}

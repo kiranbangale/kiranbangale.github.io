@@ -19,6 +19,8 @@ export class FeedbacksComponent implements OnInit {
   email = '';
   description = '';
   thumbsUp = false;
+  useGoogleProfile = false;
+  defaultProfilePic = '../../../assets/user.png';
 
   constructor(
     private dataService: DataService,
@@ -34,7 +36,8 @@ export class FeedbacksComponent implements OnInit {
         Validators.email
       ]),
       description: new FormControl(this.description, Validators.required),
-      thumbsUp: new FormControl(this.thumbsUp)
+      thumbsUp: new FormControl(this.thumbsUp),
+      useGoogleProfile: new FormControl(this.useGoogleProfile)
     });
     this.dataService.getData().subscribe(data => {
       this.feedbacks = data[0];
@@ -46,24 +49,30 @@ export class FeedbacksComponent implements OnInit {
   }
 
   onSubmit() {
-    return new Promise<any>((resolve, reject) => {
-      const provider = new firebase.auth.GoogleAuthProvider();
-      provider.addScope('profile');
-      provider.addScope('email');
-      this.afAuth.auth
-        .signInWithPopup(provider)
-        .then((res: any) => {
-          resolve(res);
-          const feedbackObj = this.feedbackForm.value;
-          feedbackObj.profilePictureUrl =
-            res.additionalUserInfo.profile.picture;
-          feedbackObj.date = Date.now();
-          this.dataService.storeFeedback(feedbackObj);
-          this.feedbackForm.reset();
-        })
-        .catch(rej => {
-          console.log(rej);
-        });
-    });
+    const feedbackObj = this.feedbackForm.value;
+    feedbackObj.date = Date.now();
+
+    if (feedbackObj.useGoogleProfile) {
+      return new Promise<any>((resolve, reject) => {
+        const provider = new firebase.auth.GoogleAuthProvider();
+        provider.addScope('profile');
+        provider.addScope('email');
+        this.afAuth.auth
+          .signInWithPopup(provider)
+          .then((res: any) => {
+            resolve(res);
+            feedbackObj.profilePictureUrl =
+              res.additionalUserInfo.profile.picture;
+            this.dataService.storeFeedback(feedbackObj);
+          })
+          .catch(rej => {
+            console.log(rej);
+          });
+      });
+    } else {
+      feedbackObj.profilePictureUrl = '';
+      this.dataService.storeFeedback(feedbackObj);
+    }
+    this.feedbackForm.reset();
   }
 }
