@@ -2,215 +2,12 @@
 
 <head>
     <title>Resume</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
     <style>
-        body {
-            width: 95%;
-            margin: 30px auto;
-            font-family: 'Ubuntu', sans-serif;
-            line-height: 20px;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-        #main-wrapper::after {
-            content: "";
-            height: 1800px;
-            background: url(bg6.png);
-            background-repeat: repeat;
-            opacity: 0.12;
-            top: 0;
-            left: 0;
-            bottom: 0;
-            right: 0;
-            position: absolute;
-            z-index: -1;
-            background-size: 100%;
-        }
-
-        header {
-            height: 200px;
-            margin-bottom: 15px;
-        }
-
-        nav {
-            height: 50px;
-            background-color: #2DBCAD;
-            margin: auto;
-            text-align: center;
-            color: #fff;
-        }
-
-        section {
-            margin: 15px 0;
-            color: #fff;
-        }
-
-        article {
-            margin: 3px;
-            padding: 5px;
-        }
-
-        #left-section {
-            float: left;
-            width: 36%;
-        }
-
-        #right-section {
-            float: right;
-            width: 62%;
-        }
-
-        #header-text {
-            padding-top: 98px;
-            font-size: 22px;
-        }
-
-        #profile-pic {
-            width: 200px;
-            height: 200px;
-            border-radius: 15px;
-            float: left;
-            background: url(resume-pic.jpg);
-            background-size: 125%;
-            background-position: 50% 20%;
-            margin-right: 20px;
-        }
-
-        .heading {
-            color: #2DBCAD;
-            margin: 15px 0;
-        }
-
-        .fab,
-        .fas {
-            vertical-align: sub;
-            padding: 12px;
-        }
-
-        .fa-2x {
-            font-size: 1.5em;
-        }
-
-        .key-skills {
-            background: #2DBCAD;
-            padding: 8px;
-            margin: 2px;
-            color: #ffff;
-            border-radius: 5px;
-            display: inline-block;
-        }
-
-        h1,
-        h3,
-        h5,
-        p {
-            margin: 8px 0 0 0;
-            color: #000;
-        }
-
-        h3 {
-            font-size: 25px;
-        }
-
-        ul {
-            color: #000;
-        }
-
-        ul.no-list-style {
-            list-style-type: none;
-            margin: 0;
-            padding: 8px;
-        }
-
-        ul.no-list-style li {
-            margin: 10px 0;
-        }
-
-        .name {
-            color: #000;
-            font-size: 36px;
-            font-style: normal;
-        }
-
-        .designation {
-            color: #000;
-            font-size: 16px;
-            margin-top: 18px;
-            font-style: normal;
-        }
-
-        .role {
-            color: #000;
-            margin-top: 0px;
-            font-size: 16px;
-            font-style: normal;
-        }
-
-        .nav-element {
-            position: relative;
-            top: 1px;
-            margin: 25px;
-        }
-
-        .theme-color {
-            color: #2DBCAD;
-        }
-
-        .text-color-black {
-            color: #2DBCAD;
-        }
-
-        .highlights-list {
-            margin: 0;
-            padding: 1px 0 0 25px;
-        }
-
-        .education {
-            margin: 0 8px;
-            text-align: left;
-        }
-
-        .education div {
-            margin: 10px 0px;
-        }
-
-        .no-list-style .text-color-black {
-            font-style: normal;
-        }
-
-        .company-name {
-            font-size: 22px;
-            color: #2DBCAD;
-            margin: 0 0 5px 0;
-            text-decoration: underline;
-            text-underline-position: under;
-        }
-
-        .key-skills-set {
-            margin: 15px 5px;
-            text-align: left;
-        }
-
-        .project-details {
-            margin: 15px 0 15px 0;
-        }
-
-        .project-name {
-            font-size: 20px;
-            color: #2DBCAD;
-            margin-bottom: 5px;
-            text-decoration: underline;
-            text-underline-position: under;
-        }
-
-        hr {
-            border: none;
-            height: 3px;
-            color: #2DBCAD;
-            background-color: #2DBCAD;
+        @page {
+            size: auto;
+            margin: 0mm;
         }
     </style>
 </head>
@@ -233,32 +30,15 @@
             <span class="nav-element">
                 <i class="fab fa-github fa-2x"></i>https://github.com/kiranbangale</span>
         </nav>
-        <section>
-            <section id="left-section">
-                <article>
-                    <h3 class="heading">KEY SKILLS</h3>
-                    <hr>
-                    <div class="key-skills-set">
-                        <div class="key-skills">MEAN Stack</div>
-                        <div class="key-skills">AngularJs</div>
-                        <div class="key-skills">Angular2</div>
-                        <div class="key-skills">Angular4</div>
-                        <div class="key-skills">Angular6</div>
-                        <div class="key-skills">JS (Adv, ES2015+)</div>
-                        <div class="key-skills">REST Services</div>
-                        <div class="key-skills">HTML5-CSS3</div>
-                        <div class="key-skills">Agile</div>
-                        <div class="key-skills">Github</div>
-                        <div class="key-skills">Octopus Deploy</div>
-                    </div>
-                </article>
+        <section id="wrapper-section">
+            <section>
                 <article>
                     <h3 class="heading">HIGHLIGHTS</h3>
                     <hr>
                     <ul class="highlights-list">
                         <li>
                             <p>
-                                3.6 years of experience in web development(MEAN Stack and Online Casino gaming).
+                                5 years of experience in web development.
                             </p>
                         </li>
                         <li>
@@ -281,49 +61,182 @@
                                 Ability to build high performance, secure with quality code web applications.
                             </p>
                         </li>
-                        <li>
-                            <p>
-                                Specific strengths and abilities includes: Can do attitude, good team player, quick to adapt and learn new technologies and
-                                a desire to excel, eager to work professionally and meet the requirements of the management
-                                within the given time frame.
-                            </p>
-                        </li>
                     </ul>
                 </article>
+            </section>
+            <section>
                 <article>
                     <h3 class="heading">TECHNOLOGY STACK</h3>
                     <hr>
                     <div>
                         <ul class="no-list-style">
+                            <!-- <li>
+                                <p>
+                                    <span class="text-color-black">Key Skills – </span>
+                                    </span>
+                                    <span class="key-skills-set">
+                                        <span class="key-skills">MEAN Stack</span>
+                                    <span class="key-skills">AngularJs</span>
+                                    <span class="key-skills">Angular2</span>
+                                    <span class="key-skills">Angular4</span>
+                                    <span class="key-skills">Angular6</span>
+                                    <span class="key-skills">JS (Adv, ES2015+)</span>
+                                    <span class="key-skills">REST Services</span>
+                                    <span class="key-skills">HTML5-CSS3</span>
+                                    <span class="key-skills">Bootstrap3</span>
+                                    <span class="key-skills">Agile</span>
+                                    <span class="key-skills">Github</span>
+                                    <span class="key-skills">Octopus Deploy</span>
+                                    </span>
+                                </p>
+                            </li> -->
                             <li>
-                                <span class="text-color-black">Technologies – </span>
-                                </span>
-                                <span>MEAN Stack, AngularJs, Angular2, Angular4, Angular6, JS (ES5-6), REST Services, HTML5-CSS3, Bootstrap3
-                                </span>
+                                <p>
+                                    <span class="text-color-black">Key Skills – </span>
+                                    </span>
+                                    <span>
+                                    MEAN Stack, 
+                                    AngularJs, 
+                                    Angular2, 
+                                    Angular4, 
+                                    Angular6, 
+                                    JS (Adv, ES2015+), 
+                                    REST Services, 
+                                    HTML5-CSS3, 
+                                    Bootstrap3, 
+                                    Agile, 
+                                    Github, 
+                                    Octopus Deploy
+                                    </span>
+                                </p>
                             </li>
                             <li>
-                                <span class="text-color-black">Version and Project Management Tools – </span>
+                                <p>
+                                    <span class="text-color-black">Version and Project Management Tools – </span>
+                                    </span>
+                                    <span>Github, JIRA, Trello, Redmine, Octopus Deploy, TeamCity
                                 </span>
-                                <span>Github, JIRA, Trello, Redmine, Octopus Deploy, TeamCity
-                                </span>
+                                </p>
                             </li>
                             <li>
-                                <span class="text-color-black">Tools – </span>
+                                <p>
+                                    <span class="text-color-black">Tools – </span>
+                                    </span>
+                                    <span>NPM, Bower, Gulp, Sublime Text 2, VS code, Source Tree
                                 </span>
-                                <span>NPM, Bower, Gulp, Sublime Text 2, VS code, Source Tree
-                                </span>
+                                </p>
                             </li>
                             <li>
                                 <p>
                                     <span class="text-color-black">Operating Systems – </span>
                                     </span>
-                                    <span>MAC, Ubuntu, Windows
+                                    <span>Mac, Ubuntu, Windows
                                     </span>
                                 </p>
                             </li>
                         </ul>
                     </div>
                 </article>
+            </section>
+
+
+
+            <section>
+                <article>
+                    <h3 class="heading">WORK EXPERIENCE</h3>
+                    <hr>
+                    <br>
+                    <article>
+                        <div>
+                            <h5 class="company-name">Zensar Technologies Pvt. Ltd. (06/2017 – Present)</h5>
+                            <hr>
+                            <br>
+                            <div class="project-details">
+                                <h5 class="project-name">Derivco Game Porting and Lobby (06/2017 – Present)</h5>
+                                <br>
+                                <p class="project-skills">Derivco is an online casino gaming client. The programme is all about to deliver and maintain slot games developed in various JS frameworks. The requirements were dynamic according to the market revenues at the given time.
+                                    Play.Next: V3 - Bust the bank, Wild Orient, Lucky Twins; Component Store - Spring Break, Burning Desire, Alaskan Fishing, What A Hoot. Derivco lobby is the platform for hosting these games on different environments
+                                    were the Zensar's internal/external(IQL) development, quality assessment can be hosted. </p>
+                                <p class="project-skills">
+                                    <span class="text-color-black">Domain – </span>Online Casino Gaming</p>
+                                <p class="project-skills">
+                                    <span class="text-color-black">Duration – </span>1.4yr</p>
+                                <p class="project-skills">
+                                    <span class="text-color-black">Skills – </span>Adv JS, RxJs, VFL, ES6, Angular4, Angular6, Waterfall Model</p>
+                                <p class="project-skills">
+                                    <span class="text-color-black">Challenges – </span>To grasp new frameworks without any guidance and immediately starting working on it like a pro and to quickly adopt changing client requirements. Train new joiners
+                                    and freshers along with project work.</p>
+                            </div>
+                            <div class="project-details">
+                                <h5 class="project-name">Redmine Statistics (01/2018 – Present)</h5>
+                                <br>
+                                <p class="project-skills">The internal quality analysis tool for representing the defect reports in different chart forms.
+                                </p>
+                                <p class="project-skills">
+                                    <span class="text-color-black">Domain – </span>Project Utility Tool</p>
+                                <p class="project-skills">
+                                    <span class="text-color-black">Duration – </span>0.10yr</p>
+                                <p class="project-skills">
+                                    <span class="text-color-black">Skills – </span>Angular4, Angular6, NodeJs</p>
+                                <p class="project-skills">
+                                    <span class="text-color-black">Challenges – </span>To do full analysis and figure out the requirements and implement it along with ongoing project work.</p>
+                            </div>
+                            <br>
+                            <h5 class="company-name">Cuelogic Technologies Pvt. Ltd. (04/2015 – 05/2017)</h5>
+                            <hr>
+                            <br>
+                            <div class="project-details">
+                                <h5 class="project-name">Kantar Media (07/2016 – 05/2017)</h5>
+                                <br>
+                                <p class="project-skills">Kantar Media is data and service provider for all sort of media measurements, monitoring, and selection. The project is about serving global harmonizing platform for Kantar Data Providers, Users, and Clients.
+                                </p>
+                                <p class="project-skills">
+                                    <span class="text-color-black">Domain – </span>Advertisement</p>
+                                <p class="project-skills">
+                                    <span class="text-color-black">Duration – </span>0.10yr</p>
+                                <p class="project-skills">
+                                    <span class="text-color-black">Skills – </span>AngularJS, REST Services , TDD, Agile</p>
+                                <p class="project-skills">
+                                    <span class="text-color-black">Challenges – </span>Being responsible for whole modules delivery from scratch to end.</p>
+                            </div>
+                            <div class="project-details">
+                                <h5 class="project-name">Surescore (08/2015 – 06/2016)</h5>
+                                <br>
+                                <p class="project-skills">
+                                    “SureScore” is a platform which offers a quality college preparation pathway. It serves service at a region, district, campus, teacher, student level. The project presents various types of exams, students’ scores statistics, etc.
+                                </p>
+                                <p class="project-skills">
+                                    <span class="text-color-black">Domain – </span>Educational</p>
+                                <p class="project-skills">
+                                    <span class="text-color-black">Duration – </span>0.10yr</p>
+                                <p class="project-skills">
+                                    <span class="text-color-black">Skills – </span>MEAN Stack, AngularJs, NodeJs, ExpressJs, REST Services, Agile</p>
+                                <p class="project-skills">
+                                    <span class="text-color-black">Challenges – </span>To learn and implement the whole project from scratch.</p>
+                            </div>
+                            <div class="project-details">
+                                <h5 class="project-name">Books That Grow (04/2015 – 08/2015)</h5>
+                                <br>
+                                <p class="project-skills">
+                                    “Books that grow” is open source platform for teachers, parents, and students. Through BTG teachers/parents/students collaborate at the same platform to share teaching and track the progress.
+                                </p>
+                                <p class="project-skills">
+                                    <span class="text-color-black">Domain – </span>Educational</p>
+                                <p class="project-skills">
+                                    <span class="text-color-black">Duration – </span>0.4yr</p>
+                                <p class="project-skills">
+                                    <span class="text-color-black">Skills – </span>MEAN Stack, REST Services, Bootstrap</p>
+                                <p class="project-skills">
+                                    <span class="text-color-black">Challenges – </span>To learn and implement the whole project from scratch.</p>
+                            </div>
+
+                        </div>
+                    </article>
+                </article>
+            </section>
+
+            <section>
+
 
                 <article>
                     <h3 class="heading">EDUCATION</h3>
@@ -344,105 +257,8 @@
                     </div>
                 </article>
             </section>
-            <section id="right-section">
-                <article>
-                    <h3 class="heading">WORK EXPERIENCE</h3>
-                    <hr>
-                    <br>
-                    <article>
-                        <div>
-                            <h5 class="company-name">Zensar Technologies Pvt. Ltd. (06/2017 – Present)</h5>
-                            <br>
-                            <div class="project-details">
-                                <h5 class="project-name">Derivco Game Porting and Lobby (06/2017 – Present)</h5>
-                                <p class="project-description">Derivco is an online casino gaming client. The programme is all about to deliver and maintain
-                                    slot games developed in various JS frameworks. The requirements were dynamic according to the market revenues at the given time. Play.Next: V3 - Bust the bank, Wild Orient,
-                                    Lucky Twins; Component Store - Spring Break, Burning Desire, Alaskan Fishing, What A
-                                    Hoot. Derivco lobby is the platform for hosting these games on
-                                    different environments were the Zensar's internal/external(IQL) development, quality
-                                    assessment can be hosted. </p>
-                                <p class="project-skills">
-                                    <span class="text-color-black">Domain – </span>Online Casino Gaming</p>
-                                <p class="project-skills">
-                                    <span class="text-color-black">Duration – </span>1.4yr</p>
-                                <p class="project-skills">
-                                    <span class="text-color-black">Skills – </span>Adv JS, RxJs, VFL, ES6, Angular4, Angular6, Waterfall Model</p>
-                                <p class="project-challenges">
-                                    <span class="text-color-black">Challenges – </span>To grasp new frameworks without any guidance and immediately starting
-                                    working on it like a pro and to quickly adopt changing client requirements. Train new joiners and freshers along with project work.</p>
-                            </div>
-                            <div class="project-details">
-                                <h5 class="project-name">Redmine Statistics (01/2018 – Present)</h5>
-                                <p class="project-description">The internal quality analysis tool for representing the defect reports in different chart
-                                    forms.
-                                </p>
-                                <p class="project-skills">
-                                    <span class="text-color-black">Domain – </span>Project Utility Tool</p>
-                                <p class="project-skills">
-                                    <span class="text-color-black">Duration – </span>0.10yr</p>
-                                <p class="project-skills">
-                                    <span class="text-color-black">Skills – </span>Angular4, Angular6, NodeJs</p>
-                                <p class="project-challenges">
-                                    <span class="text-color-black">Challenges – </span>To do full analysis and figure out the requirements and implement
-                                    it along with ongoing project work.</p>
-                            </div>
-                            <br>
-                            <h5 class="company-name">Cuelogic Technologies Pvt. Ltd. (04/2015 – 05/2017)</h5>
-                            <br>
-                            <div class="project-details">
-                                <h5 class="project-name">Kantar Media (07/2016 – 05/2017)</h5>
-                                <p class="project-description">Kantar Media is data and service provider for all sort of media measurements, monitoring,
-                                    and selection. The project is about serving global harmonizing platform for Kantar Data
-                                    Providers, Users, and Clients.
-                                </p>
-                                <p class="project-skills">
-                                    <span class="text-color-black">Domain – </span>Advertisement</p>
-                                <p class="project-skills">
-                                    <span class="text-color-black">Duration – </span>0.10yr</p>
-                                <p class="project-skills">
-                                    <span class="text-color-black">Skills – </span>AngularJS, REST Services , TDD, Agile</p>
-                                <p class="project-challenges">
-                                    <span class="text-color-black">Challenges – </span>Being responsible for whole modules delivery from scratch to end.</p>
-                            </div>
-                            <div class="project-details">
-                                <h5 class="project-name">Surescore (08/2015 – 06/2016)</h5>
-                                <p class="project-description">
-                                    “SureScore” is a platform which offers a quality college preparation pathway. It serves service at a region, district, campus,
-                                    teacher, student level. The project presents various types of exams, students’ scores
-                                    statistics, etc.
-                                </p>
-                                <p class="project-skills">
-                                    <span class="text-color-black">Domain – </span>Educational</p>
-                                <p class="project-skills">
-                                    <span class="text-color-black">Duration – </span>0.10yr</p>
-                                <p class="project-skills">
-                                    <span class="text-color-black">Skills – </span>MEAN Stack, AngularJs, NodeJs, ExpressJs, REST Services, Agile</p>
-                                <p class="project-challenges">
-                                    <span class="text-color-black">Challenges – </span>To learn and implement the whole project from scratch.</p>
-                            </div>
-                            <div class="project-details">
-                                <h5 class="project-name">Books That Grow (04/2015 – 08/2015)</h5>
-                                <p class="project-description">
-                                    “Books that grow” is open source platform for teachers, parents, and students. Through BTG teachers/parents/students collaborate
-                                    at the same platform to share teaching and track the progress.
-                                </p>
-                                <p class="project-skills">
-                                    <span class="text-color-black">Domain – </span>Educational</p>
-                                <p class="project-skills">
-                                    <span class="text-color-black">Duration – </span>0.4yr</p>
-                                <p class="project-skills">
-                                    <span class="text-color-black">Skills – </span>MEAN Stack, REST Services, Bootstrap</p>
-                                <p class="project-challenges">
-                                    <span class="text-color-black">Challenges – </span>To learn and implement the whole project from scratch.</p>
-                            </div>
-
-                        </div>
-                    </article>
-                </article>
-
-            </section>
         </section>
     </div>
 </body>
 
-</html>
+</html
