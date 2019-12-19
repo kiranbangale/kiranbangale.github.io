@@ -6,8 +6,8 @@ body {
 }
 
 #main-wrapper::after {
-    content: "";
-    height: 1800px;
+    content: '';
+    height: 3225px;
     background: url(bg6.png);
     background-repeat: repeat;
     opacity: 0.12;
@@ -27,7 +27,7 @@ header {
 
 nav {
     height: 40px;
-    background-color: #2DBCAD;
+    background-color: #2dbcad;
     margin: auto;
     text-align: center;
     color: #fff;
@@ -54,7 +54,7 @@ nav {
 }
 
 .heading {
-    color: #2DBCAD;
+    color: #2dbcad;
     margin: 15px 0;
 }
 
@@ -73,7 +73,7 @@ nav {
 }
 
 .key-skills {
-    background: #2DBCAD;
+    background: #2dbcad;
     padding: 4px;
     margin: 1px;
     color: #ffff;
@@ -137,11 +137,11 @@ ul.no-list-style li {
 }
 
 .theme-color {
-    color: #2DBCAD;
+    color: #2dbcad;
 }
 
 .text-color-black {
-    color: #2DBCAD;
+    color: #2dbcad;
     font-weight: bold;
     font-size: 14px;
 }
@@ -168,7 +168,7 @@ ul.no-list-style li {
 
 .company-name {
     font-size: 22px;
-    color: #2DBCAD;
+    color: #2dbcad;
     margin: 0 0 5px 0;
     text-underline-position: under;
 }
@@ -179,14 +179,15 @@ ul.no-list-style li {
 
 .project-name {
     font-size: 20px;
-    color: #2DBCAD;
+    color: #2dbcad;
     margin-bottom: 5px;
+    text-decoration: underline;
     text-underline-position: under;
 }
 
 hr {
     border: none;
     height: 1px;
-    color: #2DBCAD;
-    background-color: #2DBCAD;
+    color: #2dbcad;
+    background-color: #2dbcad;
 }
