@@ -7,7 +7,7 @@ body {
 
 #main-wrapper::after {
     content: '';
-    height: 4000px;
+    height: 3225px;
     background: url(bg6.png);
     background-repeat: repeat;
     opacity: 0.12;
