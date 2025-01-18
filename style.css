@@ -28,14 +28,13 @@ header {
 nav {
     height: 30px;
     background-color: #2dbcad;
-    margin: auto;
     text-align: center;
     color: #fff;
-    font-size: 8px;
+    font-size: 10px;
 }
 
 .nav-element {
-    margin-left: 25px;
+    margin-left: 10px;
 }
 
 #header-text {
