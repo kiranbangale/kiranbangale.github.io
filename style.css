@@ -26,12 +26,12 @@ header {
 }
 
 nav {
-    height: 40px;
+    height: 30px;
     background-color: #2dbcad;
     margin: auto;
     text-align: center;
     color: #fff;
-    font-size: 14px;
+    font-size: 8px;
 }
 
 .nav-element {
