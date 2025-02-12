@@ -1,13 +1,13 @@
 body {
     font-family: Verdana;
     -webkit-print-color-adjust: exact;
-    margin: 30px auto;
+    margin: 0px auto;
     line-height: 20px;
 }
 
 #main-wrapper::after {
     content: '';
-    height: 2800px;
+    height: 2150px;
     background: url(bg6.png);
     background-repeat: repeat;
     opacity: 0.12;
@@ -54,11 +54,11 @@ nav {
 
 .heading {
     color: #2dbcad;
-    margin: 15px 0;
+    margin: 0;
 }
 
 #wrapper-section {
-    margin: 25px;
+    margin: 0 25px;
 }
 
 .fab,
@@ -71,21 +71,6 @@ nav {
     font-size: 1.2em;
 }
 
-.key-skills {
-    background: #2dbcad;
-    padding: 4px;
-    margin: 1px;
-    color: #ffff;
-    border-radius: 5px;
-    display: inline;
-}
-
-.key-skills-set {
-    /* margin: 15px 5px; */
-    text-align: left;
-    font-size: 10px;
-}
-
 h1,
 h3,
 h5,
@@ -95,12 +80,10 @@ p {
     font-weight: lighter;
 }
 
-p.project-skills {
-    margin: 2px 0 0 15px;
-}
-
 p {
+    margin: 0;
     font-size: 12px;
+    line-height: 1.2;
 }
 
 h3 {
@@ -117,7 +100,7 @@ ul.no-list-style {
     padding: 8px;
 }
 
-ul.no-list-style li {
+ul.no-list-style li, ul li {
     margin: 10px 0;
 }
 
@@ -127,7 +110,7 @@ ul.no-list-style li {
 
 .designation {
     font-size: 14px;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 .role {
@@ -135,11 +118,7 @@ ul.no-list-style li {
     font-size: 14px;
 }
 
-.theme-color {
-    color: #2dbcad;
-}
-
-.text-color-black {
+.text-color-blue {
     color: #2dbcad;
     font-weight: bold;
     font-size: 14px;
@@ -153,36 +132,8 @@ ul.no-list-style li {
     color: #2dbcad;
 }
 
-.education {
-    margin: 0 8px;
-    text-align: left;
-}
-
-.education div {
-    margin: 10px 0px;
-}
-
-.no-list-style .text-color-black {
+.no-list-style .text-color-blue {
     font-style: normal;
-}
-
-.company-name {
-    font-size: 22px;
-    color: #2dbcad;
-    margin: 0 0 5px 0;
-    text-underline-position: under;
-}
-
-.project-details {
-    margin: 25px 0 25px 0;
-}
-
-.project-name {
-    font-size: 20px;
-    color: #2dbcad;
-    margin-bottom: 5px;
-    text-decoration: underline;
-    text-underline-position: under;
 }
 
 hr {
@@ -190,8 +141,26 @@ hr {
     height: 1px;
     color: #2dbcad;
     background-color: #2dbcad;
+    margin: 1px 0;
 }
-
+.lh{
+    line-height: 1.5;
+}
+.m-0{
+    margin: 0 !important;
+}
+.m-15 {
+    margin: 15px;
+}
 .ms-15 {
     margin-left: 15px;
+}
+.h-45{
+    height: 45px;
+}
+.d-flex {
+    display: flex;
+}
+.float-right {
+    float: right;
 }
