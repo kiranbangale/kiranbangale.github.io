@@ -1,166 +1,174 @@
 body {
-    font-family: Verdana;
-    -webkit-print-color-adjust: exact;
-    margin: 0px auto;
-    line-height: 20px;
+  font-family: Verdana;
+  -webkit-print-color-adjust: exact;
+  margin: 0px auto;
+  line-height: 20px;
 }
 
 #main-wrapper::after {
-    content: '';
-    height: 2150px;
-    background: url(bg6.png);
-    background-repeat: repeat;
-    opacity: 0.12;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -1;
-    background-size: 100%;
+  content: "";
+  height: 2150px;
+  background: url(bg6.png);
+  background-repeat: repeat;
+  opacity: 0.12;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  background-size: 100%;
 }
 
 header {
-    margin-bottom: 15px;
-    margin-left: 15px;
+  margin-bottom: 15px;
+  margin-left: 15px;
 }
 
 nav {
-    height: 30px;
-    background-color: #2dbcad;
-    text-align: center;
-    color: #fff;
-    font-size: 10px;
+  height: 30px;
+  background-color: #2dbcad;
+  text-align: center;
+  color: #fff;
+  font-size: 10px;
 }
 
 .nav-element {
-    margin-left: 10px;
+  margin-left: 10px;
 }
 
 #header-text {
-    padding-top: 67px;
+  padding-top: 67px;
 }
 
 #profile-pic {
-    width: 150px;
-    height: 150px;
-    border-radius: 15px;
-    float: left;
-    background: url(resume-pic.jpg);
-    background-size: 125%;
-    background-position: 50% 20%;
-    margin-right: 15px;
+  width: 150px;
+  height: 150px;
+  border-radius: 15px;
+  float: left;
+  background: url(resume-pic.jpg);
+  background-size: 125%;
+  background-position: 50% 20%;
+  margin-right: 15px;
 }
 
 .heading {
-    color: #2dbcad;
-    margin: 0;
+  color: #2dbcad;
+  margin: 0;
 }
 
 #wrapper-section {
-    margin: 0 25px;
+  margin: 0 25px;
 }
 
 .fab,
 .fas {
-    vertical-align: initial;
-    padding: 10px;
+  vertical-align: initial;
+  padding: 10px;
 }
 
 .fa-2x {
-    font-size: 1.2em;
+  font-size: 1.2em;
 }
 
 h1,
 h3,
 h5,
 p {
-    margin: 8px 0 0 0;
-    color: #000;
-    font-weight: lighter;
+  margin: 8px 0 0 0;
+  color: #000;
+  font-weight: lighter;
 }
 
 p {
-    margin: 0;
-    font-size: 12px;
-    line-height: 1.2;
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.2;
 }
 
 h3 {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 ul {
-    color: #000;
+  color: #000;
 }
 
 ul.no-list-style {
-    list-style-type: none;
-    margin: 0;
-    padding: 8px;
+  list-style-type: none;
+  margin: 0;
+  padding: 8px;
 }
 
-ul.no-list-style li, ul li {
-    margin: 3px 0;
+ul.no-list-style li,
+ul li {
+  margin: 3px 0;
 }
 
 .name {
-    font-size: 32px;
+  font-size: 32px;
 }
 
 .designation {
-    font-size: 14px;
-    margin-top: 10px;
+  font-size: 14px;
+  margin-top: 10px;
 }
 
 .role {
-    margin-top: 0px;
-    font-size: 14px;
+  margin-top: 0px;
+  font-size: 14px;
+}
+
+.blue {
+  color: #2dbcad;
 }
 
 .text-color-blue {
-    color: #2dbcad;
-    font-weight: bold;
-    font-size: 14px;
+  color: #2dbcad;
+  font-weight: bold;
+  font-size: 14px;
 }
 
 .highlights-list {
-    margin: 0;
-    padding: 1px 0 0 25px;
-    line-height: 0.5em;
-    list-style-type: disc;
-    color: #2dbcad;
+  margin: 0;
+  padding: 8px 0 0 25px;
+  line-height: 0.5em;
+  list-style-type: disc;
+  color: #2dbcad;
 }
 
 .no-list-style .text-color-blue {
-    font-style: normal;
+  font-style: normal;
 }
 
 hr {
-    border: none;
-    height: 1px;
-    color: #2dbcad;
-    background-color: #2dbcad;
-    margin: 1px 0;
+  border: none;
+  height: 1px;
+  color: #2dbcad;
+  background-color: #2dbcad;
+  margin: 1px 0;
 }
-.lh{
-    line-height: 1.5;
+.lh {
+  line-height: 1.5;
 }
-.m-0{
-    margin: 0 !important;
+.m-0 {
+  margin: 0 !important;
 }
 .m-15 {
-    margin: 15px;
+  margin: 15px;
 }
 .ms-15 {
-    margin-left: 15px;
+  margin-left: 15px;
 }
-.h-45{
-    height: 45px;
+.h-45 {
+  height: 45px;
 }
 .d-flex {
-    display: flex;
+  display: flex;
 }
 .float-right {
-    float: right;
+  float: right;
+}
+article {
+  padding: 8px 0;
 }
