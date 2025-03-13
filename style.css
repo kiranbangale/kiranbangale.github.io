@@ -107,6 +107,7 @@ ul li {
 
 .name {
   font-size: 32px;
+  color: #2dbcad;
 }
 
 .designation {
@@ -159,6 +160,9 @@ hr {
 }
 .ms-15 {
   margin-left: 15px;
+}
+.mb-10 {
+  margin-bottom: 10px;
 }
 .h-45 {
   height: 45px;
