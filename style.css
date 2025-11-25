@@ -158,6 +158,9 @@ hr {
 .m-15 {
   margin: 15px;
 }
+.mt-10 {
+  margin-top: 10px;
+}
 .ms-15 {
   margin-left: 15px;
 }
@@ -175,4 +178,7 @@ hr {
 }
 article {
   padding: 8px 0;
+}
+.none-text-decor {
+  text-decoration: none;
 }
