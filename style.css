@@ -1,11 +1,11 @@
 body {
-  font-family: Verdana;
+  font-family: "Segoe UI", Arial, sans-serif;
   -webkit-print-color-adjust: exact;
   margin: 0px auto;
   line-height: 20px;
 }
 
-#main-wrapper::after {
+/* #main-wrapper::after {
   content: "";
   height: 2150px;
   background: url(bg6.png);
@@ -18,7 +18,7 @@ body {
   position: absolute;
   z-index: -1;
   background-size: 100%;
-}
+} */
 
 header {
   margin-bottom: 15px;
@@ -27,7 +27,7 @@ header {
 
 nav {
   height: 30px;
-  background-color: #2dbcad;
+  background-color: #0F4C81;
   text-align: center;
   color: #fff;
   font-size: 10px;
@@ -53,12 +53,14 @@ nav {
 }
 
 .heading {
-  color: #2dbcad;
-  margin: 0;
+  font-size:18px;
+    font-weight:700;
+    letter-spacing:1px;
+    text-transform:uppercase;
 }
 
 #wrapper-section {
-  margin: 0 25px;
+  margin: 0 35px;
 }
 
 .fab,
@@ -81,9 +83,8 @@ p {
 }
 
 p {
-  margin: 0;
-  font-size: 12px;
-  line-height: 1.2;
+  font-size:13px;
+    line-height:1.45;
 }
 
 h3 {
@@ -106,49 +107,63 @@ ul li {
 }
 
 .name {
-  font-size: 32px;
-  color: #2dbcad;
+    font-size:36px;
+    font-weight:700;
 }
 
 .designation {
-  font-size: 14px;
-  margin-top: 10px;
+ font-size:17px;
+    font-weight:600;
+  margin-top:8px;
 }
 
 .role {
-  margin-top: 0px;
-  font-size: 14px;
+ margin-top:12px;
+    font-size:13px;
+    line-height:1.6;
+    color:#444;
 }
 
 .blue {
-  color: #2dbcad;
+  color: #0F4C81;
 }
 
 .text-color-blue {
-  color: #2dbcad;
+  color: #0F4C81;
   font-weight: bold;
   font-size: 14px;
 }
 
-.highlights-list {
+/* .highlights-list {
   margin: 0;
   padding: 8px 0 0 25px;
-  line-height: 0.5em;
+ padding-left:22px;
+    line-height:1.4;
   list-style-type: disc;
-  color: #2dbcad;
+  color: #0F4C8n 1;
+} */
+.highlights-list{
+    padding-left:22px;
+    line-height:1.4;
 }
 
+.highlights-list li{
+    margin-bottom:6px;
+}
 .no-list-style .text-color-blue {
   font-style: normal;
 }
-
-hr {
+hr{
+    background:#d9d9d9;
+    height:1px;
+}
+/* hr {
   border: none;
   height: 1px;
-  color: #2dbcad;
-  background-color: #2dbcad;
+  color: #0F4C81;
+  background-color: #0F4C81;
   margin: 1px 0;
-}
+} */
 .lh {
   line-height: 1.5;
 }
