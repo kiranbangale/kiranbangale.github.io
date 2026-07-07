@@ -51,7 +51,15 @@ nav {
   background-position: 50% 20%;
   margin-right: 15px;
 }
+@media print{
+    #profile-pic{
+        display:none;
+    }
 
+    #header-text{
+        padding-top:20px;
+    }
+}
 .heading {
   font-size:18px;
     font-weight:700;
